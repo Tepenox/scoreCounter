@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>Record scores</title>
@@ -12,15 +13,23 @@
 </head>
 
 <body>
+    <div id="header">
+        <p>First one to <br> <span type="number" id="maxDisplay">5</span><br> Wins</p>
 
-    <h2><span id="p1Display">0</span> to <span id="p2Display">0</span></h2>
-    
-    <p>playing to : <span id="maxDisplay">5</span></p>
+    </div>
+    <div id="stripe">
+        <p>Score to win</p>
+        <input type="number" value="5" min="1">
+        <button id="reset">Reset</button>
+    </div>
 
-    <input type="number">
-    <button id="player1">Player 1</button>
+    <div id="player1"><span id="p1Display">0</span></div>
+    <div id="player2"><span id="p2Display">0</span></div>
+
+
+    <!--<button id="player1">Player 1</button>
     <button id="player2">Player 2</button>
-    <button id="reset">Reset</button>
+    <button id="reset">Reset</button> -->
 
 
     <script src="script.js"></script>

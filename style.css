@@ -1,10 +1,90 @@
-html {
+html, body {
+    margin: 0;
     height: 100%;
+    overflow: hidden;
+    font-family: "Open Sans";
 }
+
 
 .winner {
-    color: green;
-    border: 2px solid red;
-    padding: 2px;
+    color: white;
+    
 }
 
+/* max display */
+
+p {
+    margin: 0;
+}
+
+#p1Display, #p2Display {
+    font-size: 200px;
+    width: 100px;
+    display: block;
+    /* margin auto doesnt work on inline elements u need also to specefy a width */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 36vh
+}
+
+#header {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#player1 {
+    width: 50%;
+    height: 100vh;
+    margin: 0;
+    float: left;
+    background-color: red;
+}
+
+#player2 {
+    width: 50%;
+    height: 100vh;
+    margin: 0;
+    float: left;
+    background-color: blue;
+}
+
+#maxDisplay {
+    margin: 0;
+    font-size: 70px;
+    width: 50px;
+}
+
+#stripe {
+    background-color: yellow;
+    font-size: 30px;
+    text-align: center;
+}
+
+#stripe p {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+input,button {
+    border: none;
+    width: 100px;
+    font-size: inherit;
+    height: 100%;
+    outline: none;
+    background-color: inherit;
+}
+
+/* to remove arrows from number type input */
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
