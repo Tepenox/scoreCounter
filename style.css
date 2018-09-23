@@ -1,0 +1,10 @@
+html {
+    height: 100%;
+}
+
+.winner {
+    color: green;
+    border: 2px solid red;
+    padding: 2px;
+}
+
